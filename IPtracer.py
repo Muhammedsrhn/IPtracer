@@ -49,6 +49,7 @@ def myipaddr():
     print(f"{Style.RESET_ALL}{Style.BRIGHT + Fore.MAGENTA}{Style.BRIGHT + Fore.WHITE}Ülke_Kodu : {Style.RESET_ALL}"+baglanti.json()['country_calling_code']+"\n")
     print(f"{Style.RESET_ALL}{Style.BRIGHT + Fore.MAGENTA}{Style.BRIGHT + Fore.WHITE}Para_birimi : {Style.RESET_ALL}"+baglanti.json()['currency_name']+"\n")
     print(f"{Style.RESET_ALL}{Style.BRIGHT + Fore.MAGENTA}{Style.BRIGHT + Fore.WHITE}Gsm : {Style.RESET_ALL}"+baglanti.json()['org']+"\n")
+    print(f"{Style.RESET_ALL}{Style.BRIGHT + Fore.MAGENTA}{Style.BRIGHT + Fore.WHITE}Googel_Maps : https://maps.google.com/?q={Style.RESET_ALL}"+str(baglanti.json()['latitude'])+","+str(baglanti.json()['longitude']))
 
 
 def targetip():
@@ -66,5 +67,6 @@ def targetip():
     print(f"{Style.RESET_ALL}{Style.BRIGHT + Fore.MAGENTA}{Style.BRIGHT + Fore.WHITE}Ülke_Kodu : {Style.RESET_ALL}" +baglanti.json()['country_calling_code'] + "\n")
     print(f"{Style.RESET_ALL}{Style.BRIGHT + Fore.MAGENTA}{Style.BRIGHT + Fore.WHITE}Para_birimi : {Style.RESET_ALL}" +baglanti.json()['currency_name'] + "\n")
     print(f"{Style.RESET_ALL}{Style.BRIGHT + Fore.MAGENTA}{Style.BRIGHT + Fore.WHITE}Gsm : {Style.RESET_ALL}"+baglanti.json()['org'] + "\n")
+    print(f"{Style.RESET_ALL}{Style.BRIGHT + Fore.MAGENTA}{Style.BRIGHT + Fore.WHITE}Googel_Maps : https://maps.google.com/?q={Style.RESET_ALL}"+str(baglanti.json()['latitude'])+","+str(baglanti.json()['longitude']))
 
 main()
